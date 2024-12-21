@@ -43,7 +43,7 @@ export default function Home() {
             </h1>
             <p className="text-2xl text-gray-300 mb-8">Full Stack Developer & Software Engineer</p>
             <motion.div className="flex justify-center gap-4" variants={containerVariants}>
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" className="bg-black" variant= "outline">
                 View Projects
               </Button>
               <Button size="lg" className="bg-black" variant="outline">
@@ -55,7 +55,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <motion.section 
-          id="projects"
+          id="Projects"
           className="mb-32"
           style={{ opacity, scale }}
         >
@@ -95,7 +95,7 @@ export default function Home() {
                       )}
                     </div>
                     <div className="p-6">
-                      <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
+                      <h3 className=" text-gray-300 text-2xl font-semibold mb-2">{project.title}</h3>
                       <p className="text-gray-300 mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, index) => (
@@ -146,8 +146,8 @@ export default function Home() {
             {[
               { icon: Github, href: 'https://github.com/4darsh23', label: 'GitHub' },
               { icon: Linkedin, href: 'https://www.linkedin.com/in/adarsh-das-41a354272/', label: 'LinkedIn' },
-              { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
-              { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' }
+              { icon: Twitter, href: 'https://twitter.com/', label: 'Twitter' },
+              { icon: Mail, href: 'adarshrajdas23@gmail.com', label: 'Email' }
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
