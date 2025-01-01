@@ -125,10 +125,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 text-center"
+                className="bg-slate-900 backdrop-blur-sm rounded-lg p-6 text-center"
               >
                 <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
-                <Badge variant="secondary" className="bg-blue-900/30">
+                <Badge variant="secondary" className="bg-slate-700">
                   {skill.level}
                 </Badge>
               </motion.div>

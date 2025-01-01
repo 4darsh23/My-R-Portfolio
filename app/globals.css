@@ -8,8 +8,8 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
+    --background: 0 0% 0%; /* Black background */
+    --foreground: 210 20% 98%; /* White text */
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
@@ -34,12 +34,13 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
+    --background: 0 0% 0%; /* Black for dark mode too */
+    --foreground: 210 20% 98%; /* White text */
+    --card: 24 71.4% 4.1%;
     --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
+    --popover: 24 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
     --primary: 210 20% 98%;
     --primary-foreground: 220.9 39.3% 11%;
@@ -68,5 +69,10 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust grid size */
   }
 }

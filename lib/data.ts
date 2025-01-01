@@ -3,7 +3,7 @@ export const projects = [
       id: 1, 
       title: 'E-commerce Platform', 
       description: 'A modern e-commerce platform built with Next.js, Javascript , and Stripe integration.',
-      tags: ['Next.js', 'TypeScript', 'Javascript', 'Tailwind'],
+      tags: ['Next.js', 'TypeScript', 'Javascript', 'Tailwind' , 'Stripe'],
       image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80',
       link: 'https://github.com/4darsh23'
     },
